@@ -1,0 +1,27 @@
+@import "./variable";
+.footer{
+    background: #90065b;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+    .contenedor{
+        display:flex;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 50px;
+        .content-foot{
+            text-align: center;
+            &-nombre{
+                color:$blanco;
+                border-bottom:3px solid #4cd407;
+                padding-bottom: 5px;
+                margin-bottom: 20px;
+            }
+            &-informacion{
+                color:$blanco;
+            }
+        }
+        
+    }
+}

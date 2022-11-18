@@ -1,0 +1,98 @@
+$vista: mobile;
+body{
+
+    @media only screen and (max-width: 768px)
+    {
+        header{
+            background-position: center;
+        }
+        .sobrenosotros{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-contenido-texto{
+                width: 90%;
+            }
+        }
+    }
+    @if $vista == mobile{
+        @media only screen and (max-width: 320px){
+            
+    .inicio-menu{
+        text-align: center;
+        padding: 30px 0 0 0;
+        &-anchor{
+        margin-right: 5px;
+         }
+    }
+    .inicio-texto{
+     &-h1{
+         font-size: 35px;
+       }
+     &-h2{
+        font-size: 20px;
+       }
+   }
+   /*Galeria*/
+   .portafolio{
+        .galeria-port{
+            .imagen-port{
+                width: 45%;
+                height: 100px;
+            }
+        }
+    }
+     
+/* Productos destacados de la página papeleria*/
+.productos-destacados{
+   .galeria-prod{
+       .imagen-prod{
+        width: 70%;
+       }
+     }  
+   }
+ /*clientes*/
+    .cards{
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    }
+    .cards .card{
+        width: 90%;
+    }
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+    /*nuestros servicios*/
+    .acerca_nuestrosservicios{
+    .contenedor-servicio{
+        justify-content: center;
+        flex-direction: column;
+        &-indi{
+            width: 100%;
+            text-align: center;
+            &-servimg{
+                width: 90%;
+            }
+    
+        }
+
+    }
+  }
+    /*footer*/
+    .footer{
+        .contenedor{
+            flex-direction: column;
+        .content-foot{
+            margin-bottom: 20px;
+            text-align: centers;
+            &-nombre{
+                border-bottom:none;
+            }
+        }
+    
+        }  
+    }
+} 
+}
+}

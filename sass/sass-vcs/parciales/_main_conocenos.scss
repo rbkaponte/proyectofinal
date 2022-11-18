@@ -1,0 +1,137 @@
+@import "./variable";
+.sobrenosotros{
+    display: flex;
+    justify-content: space-evenly;
+        .imagen{
+        width: 48%;
+        }
+        .contenido-texto{
+        width: 48%;
+            &-texto-papeleria{
+                margin-bottom: 20px;
+                padding: 0px 5px 5px 10px;
+                text-align:justify
+            }
+            &-parrafo-papeleria{
+                padding: 0px 0px 30px 15px ;
+                font-weight: 300;
+                text-align: justify;
+                }
+        }
+        
+}   
+
+   /* Portafolio de la pagina conocenos*/
+
+.portafolio{
+        background: #f2f2f2;
+        .galeria-port{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .imagen-port{
+                width: 24%;
+                height: 200px;
+                margin-bottom: 10px;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+                box-shadow: 0 0 6px rgba(0,0, 0, .5);
+                &-producto1{
+                    width: 90%;
+                    height: 95%;
+                    object-fit: cover;
+                    display:block;
+                }
+                &-hovergaleria{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0%;
+                    transform: scale(0);
+                    background:hsla(240, 80%, 46%, 0.7);
+                    transition: transform  .5s;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                        &-producto2{
+                        width: 100%;
+                        }
+                        &-parrafonues{
+                        color:$blanco;
+                        }
+                        &-:hover{
+                            transform: scale(1);
+                       }
+
+                        
+                }
+                
+            }
+            
+        }
+    }
+
+/*clientes de la pagina conocenos*/
+
+.cards{
+    display:flex;
+    justify-content: space-evenly;
+    .card{
+        background: #903a6f;
+        display:flex;
+        width: 46%;
+        height: 200px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+        .fase{
+            width: 100 px;
+            height: 100px;
+            object-fit: cover;
+            border:3px solid #fff;
+            border-radius: 50%;
+            display: block;
+        }
+        .contenido-texto-card{
+            width: 50%;
+            color: $blanco;
+            &-testimonio{
+                font-weight: 300;
+                padding-top: 5px;
+            }  
+        }
+    }    
+}
+
+/*Acerca nuestros servicios*/
+
+.acerca_nuestroservicios{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+
+        .contenedor-servicio{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                &-indi{
+                    width: 25%;
+                    text-align: center;
+                            &-servimg{
+                            width: 100%;
+                            }
+                            &-tipo{
+                             margin: 20px 0 ;
+                            }
+                            &-infor{
+                            font-weight: 300;
+                            text-align: justify;
+                            }
+                   
+                }
+            }
+
+}
+

@@ -1,0 +1,335 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans";
+}
+
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulo {
+  color: #642a73;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+header {
+  width: 100%;
+  height: 600px;
+  background: hsl(317deg, 45%, 52%);
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(340deg, 60%, 44%, 0.63), hsla(317deg, 45%, 52%, 0.637)), url(/imagenes/presentación.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+header .inicio-menu {
+  text-align: right;
+}
+header .inicio-menu-anchor {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 10px;
+}
+header .inicio-menu-anchor:hover {
+  text-decoration: underline;
+}
+header .inicio-texto-h1 {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+}
+header .inicio-texto-h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+}
+header .wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.sobrenosotros {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sobrenosotros .imagen {
+  width: 48%;
+}
+.sobrenosotros .contenido-texto {
+  width: 48%;
+}
+.sobrenosotros .contenido-texto-texto-papeleria {
+  margin-bottom: 20px;
+  padding: 0px 5px 5px 10px;
+  text-align: justify;
+}
+.sobrenosotros .contenido-texto-parrafo-papeleria {
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+/* Portafolio de la pagina conocenos*/
+.portafolio {
+  background: #f2f2f2;
+}
+.portafolio .galeria-port {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.portafolio .galeria-port .imagen-port {
+  width: 24%;
+  height: 200px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.portafolio .galeria-port .imagen-port-producto1 {
+  width: 90%;
+  height: 95%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.portafolio .galeria-port .imagen-port-hovergaleria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  transform: scale(0);
+  background: hsla(240deg, 80%, 46%, 0.7);
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.portafolio .galeria-port .imagen-port-hovergaleria-producto2 {
+  width: 100%;
+}
+.portafolio .galeria-port .imagen-port-hovergaleria-parrafonues {
+  color: #fff;
+}
+.portafolio .galeria-port .imagen-port-hovergaleria-:hover {
+  transform: scale(1);
+}
+
+/*clientes de la pagina conocenos*/
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cards .card {
+  background: #903a6f;
+  display: flex;
+  width: 46%;
+  height: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+.cards .card .fase {
+  width: 100 px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: block;
+}
+.cards .card .contenido-texto-card {
+  width: 50%;
+  color: #fff;
+}
+.cards .card .contenido-texto-card-testimonio {
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+/*Acerca nuestros servicios*/
+.acerca_nuestroservicios {
+  background: #f2f2f2;
+  padding-bottom: 30px;
+}
+.acerca_nuestroservicios .contenedor-servicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.acerca_nuestroservicios .contenedor-servicio-indi {
+  width: 25%;
+  text-align: center;
+}
+.acerca_nuestroservicios .contenedor-servicio-indi-servimg {
+  width: 100%;
+}
+.acerca_nuestroservicios .contenedor-servicio-indi-tipo {
+  margin: 20px 0;
+}
+.acerca_nuestroservicios .contenedor-servicio-indi-infor {
+  font-weight: 300;
+  text-align: justify;
+}
+
+/* Productos destacados de la página papeleria, accesorios y utiles*/
+.productos-destacados {
+  background: #f2f2f2;
+}
+.productos-destacados .galeria-prod {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.productos-destacados .galeria-prod .imagen-prod {
+  width: 24%;
+  height: 200px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.productos-destacados .galeria-prod .imagen-prod .productos {
+  height: 70%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.productos-destacados .galeria-prod .imagen-prod .caracteristicas {
+  font-weight: bold;
+  font-size: 14px;
+  color: #414141;
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.productos-destacados .galeria-prod .imagen-prod .precio {
+  font-weight: 500;
+  color: lightcoral;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.footer {
+  background: #90065b;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+.footer .contenedor {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.footer .contenedor .content-foot {
+  text-align: center;
+}
+.footer .contenedor .content-foot-nombre {
+  color: #fff;
+  border-bottom: 3px solid #4cd407;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.footer .contenedor .content-foot-informacion {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  body header {
+    background-position: center;
+  }
+  body .sobrenosotros {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .sobrenosotros-contenido-texto {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body {
+    /*Galeria*/
+    /* Productos destacados de la página papeleria*/
+    /*clientes*/
+    /*nuestros servicios*/
+    /*footer*/
+  }
+  body .inicio-menu {
+    text-align: center;
+    padding: 30px 0 0 0;
+  }
+  body .inicio-menu-anchor {
+    margin-right: 5px;
+  }
+  body .inicio-texto-h1 {
+    font-size: 35px;
+  }
+  body .inicio-texto-h2 {
+    font-size: 20px;
+  }
+  body .portafolio .galeria-port .imagen-port {
+    width: 45%;
+    height: 100px;
+  }
+  body .productos-destacados .galeria-prod .imagen-prod {
+    width: 70%;
+  }
+  body .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .cards .card {
+    width: 90%;
+  }
+  body .cards .card:first-child {
+    margin-bottom: 30px;
+  }
+  body .acerca_nuestrosservicios .contenedor-servicio {
+    justify-content: center;
+    flex-direction: column;
+  }
+  body .acerca_nuestrosservicios .contenedor-servicio-indi {
+    width: 100%;
+    text-align: center;
+  }
+  body .acerca_nuestrosservicios .contenedor-servicio-indi-servimg {
+    width: 90%;
+  }
+  body .footer .contenedor {
+    flex-direction: column;
+  }
+  body .footer .contenedor .content-foot {
+    margin-bottom: 20px;
+    text-align: centers;
+  }
+  body .footer .contenedor .content-foot-nombre {
+    border-bottom: none;
+  }
+}/*# sourceMappingURL=estilosass.css.map */

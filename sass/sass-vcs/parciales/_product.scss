@@ -1,0 +1,43 @@
+/* Productos destacados de la página papeleria, accesorios y utiles*/
+
+.productos-destacados{
+    background: #f2f2f2;
+    .galeria-prod{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+       .imagen-prod{
+        width: 24%;
+        height: 200px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 6px rgba(0,0, 0, .5);
+
+            .productos{
+            height: 70%;
+            display: block;
+            object-fit: cover;
+            margin-left: 50px;
+            margin-right: 50px;   
+            }
+            .caracteristicas{
+            font-weight: bold;
+            font-size: 14px;
+            color:#414141;
+            display: block;
+            margin-left: 50px;
+            margin-right: 50px;
+            
+            }
+            .precio{
+            font-weight: 500;
+            color:lightcoral;
+            margin-left: 50px;
+            margin-right: 50px;
+            }
+        
+        }
+    }       
+}
